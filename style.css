@@ -1,0 +1,125 @@
+:root {
+    --grey-text: #6B7280
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+body {
+    padding: 16px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.split-by-pipe {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--grey-text);
+    padding: .6rem 0;
+}
+
+.split-by-pipe span::after {
+    content: "|";
+    color: #9E9E9E;
+    padding: 0 12px;
+}
+.split-by-pipe span:last-child::after {
+    content: "";
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns:auto max-content;
+}
+
+.header .general {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .fullname {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2.4rem;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.header .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.header .portrait {
+    object-fit: cover;
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-left: auto;
+}
+
+.ribbon {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--grey-text);
+    padding: .6rem 0;
+}
+
+.ribbon * {
+    color: var(--grey-text);
+    text-decoration: none;
+    margin: 0;
+}
+
+
+.introduction {
+    color: var(--grey-text);
+    padding: 1rem 0;
+}
+
+.section {
+    padding: 1rem 0;
+}
+
+.section > .title {
+    text-transform: uppercase;
+    color: var(--grey-text);
+    font-size: .9rem;
+}
+
+.job {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 2rem;
+}
+
+.job .company-logo {
+    flex: 0 0 auto;
+    object-fit:contain;
+    width: 100%;
+    width: 4.5rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    align-self: flex-start;
+}
+
+.job .title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
