@@ -1,5 +1,5 @@
 :root {
-    --grey-text: #6B7280
+    --grey-text: #6b7280;
 }
 
 html {
@@ -24,18 +24,24 @@ p {
     font-size: 1rem;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .split-by-pipe {
     display: flex;
     flex-wrap: wrap;
     color: var(--grey-text);
-    padding: .6rem 0;
+    padding: 0.6rem 0;
 }
 
 .split-by-pipe span::after {
     content: "|";
-    color: #9E9E9E;
+    color: #9e9e9e;
     padding: 0 12px;
 }
+
 .split-by-pipe span:last-child::after {
     content: "";
 }
@@ -43,7 +49,7 @@ p {
 .header {
     display: flex;
     flex-direction: row;
-    grid-template-columns:auto max-content;
+    grid-template-columns: auto max-content;
 }
 
 .header .general {
@@ -76,15 +82,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     color: var(--grey-text);
-    padding: .6rem 0;
+    padding: 0.6rem 0;
 }
-
-.ribbon * {
-    color: var(--grey-text);
-    text-decoration: none;
-    margin: 0;
-}
-
 
 .introduction {
     color: var(--grey-text);
@@ -95,22 +94,26 @@ p {
     padding: 1rem 0;
 }
 
-.section > .title {
+.section>.title {
     text-transform: uppercase;
     color: var(--grey-text);
-    font-size: .9rem;
+    font-size: 0.9rem;
+    padding-top: 0;
+}
+
+.section>* {
+    padding-top: 2rem;
 }
 
 .job {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding-top: 2rem;
 }
 
 .job .company-logo {
     flex: 0 0 auto;
-    object-fit:contain;
+    object-fit: contain;
     width: 100%;
     width: 4.5rem;
     padding-right: 1rem;
@@ -118,8 +121,55 @@ p {
     align-self: flex-start;
 }
 
-.job .title {
-    font-size: 1.1rem;
+.section>* .name {
+    font-size: 1rem;
     font-weight: bold;
 }
 
+.education .name {
+    text-transform: uppercase;
+}
+
+.certificates {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.certificates .certificate {
+    display: flex;
+    flex: 0 0 calc(50% - 0.4rem);
+    flex-direction: column;
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.certificates .certificate:nth-child(odd) {
+    margin-right: 0.8rem;
+}
+
+.certificates .certificate:last-child,
+.certificates .certificate:nth-child(odd):nth-last-child(2) {
+    margin-bottom: 0;
+}
+
+.certificates .certificate span {
+    color: var(--grey-text);
+    margin-bottom: .6em;
+}
+
+.certificates .certificate span:last-child {
+    margin-bottom: 0;
+}
+
+.certificates .certificate .cert-id {
+    color: #b5b5b5;
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+.certificates .certificate .cert-id::before {
+    content: "Certification ID: ";
+}
