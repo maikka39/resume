@@ -215,7 +215,7 @@ li.education {
 }
 
 .skills>* {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 .skills>*:last-child {
     margin-bottom: 0;
@@ -230,6 +230,8 @@ li.education {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .skills .circles h4 {
