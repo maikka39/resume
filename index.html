@@ -31,23 +31,36 @@
             <li class="job">
                 <img src="./img/asml.png" alt="" class="company-logo">
                 <div class="info">
+                    <h4 class="name">Security Engineer / Software Engineer</h4>
+                    <div class="split-by-pipe">
+                        <span>ASML</span>
+                        <span>Jul 2023 - Present</span>
+                    </div>
+                    <p>After concluding my graduation internship at ASML, I transitioned to a full-time role as a Cyber Security Engineer, capitalizing on the hands-on experience I gained during my internship.</p>
+                    <ul>
+                        <li>Actively involved in the architecture, development and maintenance of a homebrew SOAR solution to streamline and automate cybersecurity processes.</li>
+                        <li>Collaborate with cross-functional teams to identify areas where automation can enhance efficiency and response time.</li>
+                        <li>Implement and fine-tune security automation workflows.</li>
+                        <li>Design and implement integrations with external software to extend the capabilities of the SOAR solution.</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="job">
+                <img src="./img/asml.png" alt="" class="company-logo">
+                <div class="info">
                     <h4 class="name">Software Engineer Intern</h4>
                     <div class="split-by-pipe">
                         <span>ASML</span>
                         <span>Feb 2023 - Jul 2023</span>
                     </div>
-                    <p>During my internship at ASML's Cyber Defense Center (CDC), I worked as a DevSecOps Engineer for the Threat Intelligence team. I gained hands-on experience in Cybersecurity Engineering, Data Science, and Threat Hunting. Collaborating with another intern and experienced professionals, we conceptualized and implemented a new use-case for the team, managing the entire development and deployment process. It was a challenging and rewarding experience that deepened my technical expertise in cybersecurity.</p>
-                </div>
-            </li>
-            <li class="job">
-                <img src="./img/axians.png" alt="" class="company-logo">
-                <div class="info">
-                    <h4 class="name">Software Engineer Intern</h4>
-                    <div class="split-by-pipe">
-                        <span>Axians</span>
-                        <span>Aug 2021 - Feb 2022</span>
-                    </div>
-                    <p>During my internship at Axians, I worked in their cybersecurity division. I was responsible for developing a fully featured risk analysis dashboard which automated the generation of risk analysis reports based on user input.</p>
+                    <p>During my internship at ASML's Cyber Defense Center (CDC), I had the opportunity to work as a DevSecOps Engineer for the Threat Intelligence team.</p>
+                    <ul>
+                        <li>Gained hands-on experience in Cybersecurity Engineering, Data Science, and Threat Hunting.</li>
+                        <li>Conceptualized and implemented a new use-case for the TI team.</li>
+                        <li>Managed the entire development and deployment process for the new use-case.</li>
+                        <li>Equipped the team to more efficiently analyze and respond to cyber threats.</li>
+                        <li>Learned from a team of experts in the field, gaining valuable insights into cybersecurity intricacies.</li>
+                    </ul>
                 </div>
             </li>
             <li class="job">
@@ -58,7 +71,13 @@
                         <span>RYSST</span>
                         <span>Jul 2021 - Jul 2023</span>
                     </div>
-                    <p>I worked on various projects for Ace & Tate and Cloudwise. At Ace & Tate, my team developed an API using Vision AI to extract glasses prescriptions from images and detect specific glasses models. We also implemented an authentication framework in Scala for microservices. At Cloudwise, I contributed to extending existing applications and introducing new login methods for Windows devices using Java, Azure, Angular, Typescript, and Google Cloud Platform.</p>
+                    <p>I worked on various projects for Ace & Tate, Cloudwise and De Bijenkorf. During my time at Ace&Tate me and my team were responsible for:</p>
+                    <ul>
+                        <li>Developing an API that can read glasses prescriptions from images and returns the data as JSON using Vision AI.</li>
+                        <li>Using Vision AI to detect what model of Ace&Tate glasses someone is wearing.</li>
+                        <li>Setting up an authentication framework using Scala for usage in microservices.</li>
+                    </ul>
+                    <p>During my time at Cloudwise, my team and I worked on several things, from extending their existing applications to implementing new kid-friendly ways to log in to Windows devices. Technologies we used include: Java, Azure, Angular, Typescript, and Google Cloud Platform.</p>
                 </div>
             </li>
         </ol>
@@ -254,6 +273,10 @@
                 <span>ExpressJS</span>
             </li>
             <li class="badge">
+                <img src="./img/angular.svg" alt="">
+                <span>Angular</span>
+            </li>
+            <li class="badge">
                 <img src="./img/socketio.svg" alt="">
                 <span>Socket.IO</span>
             </li>
@@ -275,6 +298,13 @@
             </li>
         </ul>
     </div>
+    <div class="footer split-by-pipe">
+        <span>Created on: <span id="date"></span></span>
+        <span><a href="https://maikka39.github.io/resume/">View latest version</a></span>
+    </div>
+    <script>
+        date.innerText = new Date().toLocaleString('en-US', { timeZone: 'UTC' , day:"numeric", month: 'long', year:"numeric" })
+    </script>
 </body>
 
 </html>
