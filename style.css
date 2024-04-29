@@ -119,6 +119,10 @@ h4 {
     margin-bottom: 2rem;
 }
 
+.section>.title.small-margin {
+    margin-bottom: 1rem;
+}
+
 .job {
     display: flex;
     flex-direction: row;
@@ -193,6 +197,9 @@ li.education {
 
 .skills>* {
     margin-bottom: 2rem;
+}
+.skills>*:last-child {
+    margin-bottom: 0;
 }
 
 .skills h4 {
@@ -339,4 +346,31 @@ li.education {
 
 .skills .bars .bar.german::after {
     width: 45%;
+}
+
+.badges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.badges .badge {
+    font-size: .8rem;
+    line-height: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: .3rem;
+    background-color: #f3f4f6;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.badges .badge img {
+    object-fit: contain;
+    height: 1em;
+    margin-right: 4px;
 }
